@@ -1,7 +1,7 @@
 <?php
-    namespace Paypole\Cashfree;
+    namespace Twyple\Cashfree;
 
-    use Paypole\Utils\Curl;
+    use Twyple\Utils\Curl;
 
     class Payments {
 
@@ -54,7 +54,7 @@
 
 
             $this->getToken($orderData);
-            $this->orderData["source"] = "paypole";
+            $this->orderData["source"] = "twyple";
             $res = Curl::jsonPost($this->appURLs["billpay"] . "/checkout/post/submit-js-v1", $this->orderData);
 
             $orderHash = null;

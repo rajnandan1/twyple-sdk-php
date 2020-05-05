@@ -1,5 +1,5 @@
 <?php
-    namespace Paypole\Utils;
+    namespace Twyple\Utils;
     class Curl {
 
         public static function jsonPost($url, $data){
