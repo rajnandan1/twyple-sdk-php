@@ -5,6 +5,7 @@
         "name": "Raj Nandan Sharma",
         "email": "rajnandan1@gmail.com"
     }],
+    "minimum-stability": "stable",
     "require": {
         "php": ">=5.2"
     },
