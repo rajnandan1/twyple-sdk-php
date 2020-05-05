@@ -1,5 +1,5 @@
 {
-    "name": "paypole/twyple-sdk-php",
+    "name": "twyple/twyple-sdk-php",
     "description": "Simple php class to handle payments for India Payment Gateways",
     "authors": [{
         "name": "Raj Nandan Sharma",
