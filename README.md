@@ -7,6 +7,7 @@
  Create an endpoint and initialize the package. All you have to do is read the input data and call the Handler
  
  #### Cashfree
+ ```http://your/server/route.php```
  
  ```
  <?php
