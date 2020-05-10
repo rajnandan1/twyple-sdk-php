@@ -48,7 +48,12 @@
 
             $res = Curl::formPost($this->appURLs["apiV1"] . "/order/info/link", $payload);
 
-            return explode("#", $res["paymentLink"])[1];
+            if(sizeof(explode("#", $res["paymentLink"])) >= 2){
+                return explode("#", $res["paymentLink"])[1];
+            } else {
+                $d = explode("/", $res["paymentLink"]);
+                return $d[count($d)-1];
+            }
         }
         public function getOrderHash($orderData){
 
